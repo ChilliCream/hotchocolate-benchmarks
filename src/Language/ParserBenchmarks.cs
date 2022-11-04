@@ -1,6 +1,6 @@
 using System.Text;
 using BenchmarkDotNet.Attributes;
-using Language.Resources;
+using HotChocolate.Language.Benchmarks.Resources;
 
 namespace HotChocolate.Language.Benchmarks;
 

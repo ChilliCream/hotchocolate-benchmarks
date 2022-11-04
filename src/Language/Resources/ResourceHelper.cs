@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Text;
 
-namespace Language.Resources;
+namespace HotChocolate.Language.Benchmarks.Resources;
 
 public class ResourceHelper
 {
-    private const string _resourcePath = "HotChocolate.Language.Resources";
+    private const string _resourcePath = "HotChocolate.Language.Benchmarks.Resources";
     private readonly Assembly _assembly;
 
     public ResourceHelper()
