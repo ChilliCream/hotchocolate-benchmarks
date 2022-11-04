@@ -17,8 +17,13 @@ namespace HotChocolate.Execution.Benchmarks.Project.Extensions
         public static IObjectFieldDescriptor UseUpperCase(
             this IObjectFieldDescriptor descriptor)
         {
+#if HC13
+            descriptor.Extend().Definition.FormatterDefinitions.Add(
+                new((_, r) => r is string s ? s.ToUpperInvariant() : r));
+#else
             descriptor.Extend().Definition.ResultConverters.Add(
                 new((c, r) => r is string s ? s.ToUpperInvariant() : r));
+#endif
             return descriptor;
         }
     }
