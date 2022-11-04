@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net7.0; net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <RootNamespace>HotChocolate.Language</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotnet" Version="0.13.2" />
+    <PackageReference Include="HotChocolate.Language" Version="13.0.0-preview.76" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\IntrospectionQuery.graphql" />
+    <EmbeddedResource Include="Resources\IntrospectionQuery.graphql" />
+    <None Remove="Resources\kitchen-sink.graphql" />
+    <EmbeddedResource Include="Resources\kitchen-sink.graphql" />
+    <None Remove="Resources\kitchen-sink-nullability.graphql" />
+    <EmbeddedResource Include="Resources\kitchen-sink-nullability.graphql" />
+    <None Remove="Resources\onegraph.graphql" />
+    <EmbeddedResource Include="Resources\onegraph.graphql" />
+    <None Remove="Resources\QueryWithIntArgument.graphql" />
+    <EmbeddedResource Include="Resources\QueryWithIntArgument.graphql" />
+    <None Remove="Resources\QueryWithStringArg.graphql" />
+    <EmbeddedResource Include="Resources\QueryWithStringArg.graphql" />
+    <None Remove="Resources\russian-literals.graphql" />
+    <EmbeddedResource Include="Resources\russian-literals.graphql" />
+    <None Remove="Resources\schema-kitchen-sink.graphql" />
+    <EmbeddedResource Include="Resources\schema-kitchen-sink.graphql" />
+    <None Remove="Resources\SchemaLarge.graphql" />
+    <EmbeddedResource Include="Resources\SchemaLarge.graphql" />
+    <None Remove="Resources\SchemaMedium.graphql" />
+    <EmbeddedResource Include="Resources\SchemaMedium.graphql" />
+  </ItemGroup>
+
+</Project>
