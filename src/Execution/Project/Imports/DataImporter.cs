@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace HotChocolate.ConferencePlanner.Imports
+namespace HotChocolate.Execution.Benchmarks.Project.Imports
 {
     public class DataImporter
     {

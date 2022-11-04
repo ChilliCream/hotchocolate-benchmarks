@@ -1,13 +1,10 @@
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 using HotChocolate.Subscriptions;
-using HotChocolate.Types;
+using Microsoft.EntityFrameworkCore;
 
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class AttendeeMutations

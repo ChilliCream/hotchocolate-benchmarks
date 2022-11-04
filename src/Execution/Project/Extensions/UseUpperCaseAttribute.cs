@@ -1,8 +1,7 @@
 using System.Reflection;
-using HotChocolate.Types;
 using HotChocolate.Types.Descriptors;
 
-namespace HotChocolate.ConferencePlanner
+namespace HotChocolate.Execution.Benchmarks.Project.Extensions
 {
     public class UseUpperCaseAttribute : ObjectFieldDescriptorAttribute
     {

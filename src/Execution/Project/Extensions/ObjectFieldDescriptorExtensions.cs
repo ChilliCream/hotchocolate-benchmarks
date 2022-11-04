@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using HotChocolate.Types;
 
-namespace HotChocolate.ConferencePlanner
+namespace HotChocolate.Execution.Benchmarks.Project.Extensions
 {
     public static class ObjectFieldDescriptorExtensions
     {

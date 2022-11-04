@@ -1,8 +1,6 @@
-using System.Collections.Generic;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.Types.Relay;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Sessions
+namespace HotChocolate.Execution.Benchmarks.Project.Sessions
 {
     public record AddSessionInput(
         string Title,

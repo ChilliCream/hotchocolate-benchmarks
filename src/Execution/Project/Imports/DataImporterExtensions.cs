@@ -1,9 +1,9 @@
-using HotChocolate.ConferencePlanner.Data;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 using HotChocolate.Execution.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HotChocolate.ConferencePlanner.Imports
+namespace HotChocolate.Execution.Benchmarks.Project.Imports
 {
     public static class ImportRequestExecutorBuilderExtensions
     {

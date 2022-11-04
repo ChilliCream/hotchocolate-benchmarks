@@ -1,40 +1,23 @@
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
+using BenchmarkDotNet.Attributes;
+using HotChocolate.Execution.Benchmarks.Project.Attendees;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
+using HotChocolate.Execution.Benchmarks.Project.Imports;
+using HotChocolate.Execution.Benchmarks.Project.Sessions;
+using HotChocolate.Execution.Benchmarks.Project.Speakers;
+using HotChocolate.Execution.Benchmarks.Project.Tracks;
+using HotChocolate.Language;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using BenchmarkDotNet.Attributes;
-using GreenDonut;
-using HotChocolate.ConferencePlanner.Attendees;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate.ConferencePlanner.Imports;
-using HotChocolate.ConferencePlanner.Sessions;
-using HotChocolate.ConferencePlanner.Speakers;
-using HotChocolate.ConferencePlanner.Tracks;
-using HotChocolate.Execution;
-using HotChocolate.Execution.Configuration;
-using HotChocolate.Execution.Instrumentation;
-using HotChocolate.Execution.Processing;
-using HotChocolate.Language;
-using HotChocolate.Resolvers;
-using HotChocolate.Types;
-using Newtonsoft.Json;
 
-namespace HotChocolate.ConferencePlanner
+namespace HotChocolate.Execution.Benchmarks.Project
 {
     public class BenchmarkBase
     {

@@ -1,7 +1,6 @@
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.Types.Relay;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     public record CheckInAttendeeInput(
         [ID(nameof(Session))]

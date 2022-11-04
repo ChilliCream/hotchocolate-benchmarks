@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 using Microsoft.EntityFrameworkCore;
-using HotChocolate.ConferencePlanner.Data;
-using GreenDonut;
-using HotChocolate.Fetching;
 
-namespace HotChocolate.ConferencePlanner.DataLoader
+namespace HotChocolate.Execution.Benchmarks.Project.DataLoader
 {
     public class AttendeeByIdDataLoader : BatchDataLoader<int, Attendee>
     {

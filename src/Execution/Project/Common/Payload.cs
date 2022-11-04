@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace HotChocolate.ConferencePlanner.Common
+namespace HotChocolate.Execution.Benchmarks.Project.Common
 {
     public abstract class Payload
     {

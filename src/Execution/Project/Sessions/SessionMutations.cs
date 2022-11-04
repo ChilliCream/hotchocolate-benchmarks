@@ -1,12 +1,9 @@
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 using HotChocolate.Subscriptions;
-using HotChocolate.Types;
 
-namespace HotChocolate.ConferencePlanner.Sessions
+namespace HotChocolate.Execution.Benchmarks.Project.Sessions
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class SessionMutations
@@ -62,7 +59,6 @@ namespace HotChocolate.ConferencePlanner.Sessions
             }
 
             var session = await context.Sessions.FindAsync(input.SessionId);
-            var initialTrackId = session.TrackId;
 
             if (session is null)
             {

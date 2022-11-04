@@ -1,14 +1,10 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 using Microsoft.EntityFrameworkCore;
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
 
-namespace HotChocolate.ConferencePlanner.Sessions
+namespace HotChocolate.Execution.Benchmarks.Project.Sessions
 {
     public class ScheduleSessionPayload : SessionPayloadBase
     {

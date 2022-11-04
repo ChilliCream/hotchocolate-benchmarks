@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace HotChocolate.ConferencePlanner.Data
+namespace HotChocolate.Execution.Benchmarks.Project.Data
 {
     public class Session
     {

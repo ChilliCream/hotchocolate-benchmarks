@@ -1,10 +1,7 @@
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate;
-using HotChocolate.Types;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 
-namespace HotChocolate.ConferencePlanner.Tracks
+namespace HotChocolate.Execution.Benchmarks.Project.Tracks
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class TrackMutations
@@ -29,7 +26,7 @@ namespace HotChocolate.ConferencePlanner.Tracks
             [ScopedService] ApplicationDbContext context,
             CancellationToken cancellationToken)
         {
-            var track = await context.Tracks.FindAsync(input.Id);
+            var track = (await context.Tracks.FindAsync(input.Id))!;
             track.Name = input.Name;
 
             await context.SaveChangesAsync(cancellationToken);

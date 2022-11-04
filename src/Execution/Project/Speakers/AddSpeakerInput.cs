@@ -1,4 +1,4 @@
-namespace HotChocolate.ConferencePlanner.Speakers
+namespace HotChocolate.Execution.Benchmarks.Project.Speakers
 {
     public record AddSpeakerInput(
         string Name,

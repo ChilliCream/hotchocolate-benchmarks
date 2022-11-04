@@ -1,7 +1,7 @@
-using HotChocolate.ConferencePlanner.Data;
 using HotChocolate.Data.Filters;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Types
+namespace HotChocolate.Execution.Benchmarks.Project.Types
 {
     public class SessionFilterInputType : FilterInputType<Session>
     {

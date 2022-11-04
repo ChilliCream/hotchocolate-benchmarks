@@ -1,7 +1,7 @@
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Sessions
+namespace HotChocolate.Execution.Benchmarks.Project.Sessions
 {
     public class RenameSessionPayload : Payload
     {

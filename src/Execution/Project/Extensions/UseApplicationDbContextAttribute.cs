@@ -1,10 +1,9 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.Types;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 using HotChocolate.Types.Descriptors;
 
-namespace HotChocolate.ConferencePlanner
+namespace HotChocolate.Execution.Benchmarks.Project.Extensions
 {
     public class UseApplicationDbContextAttribute : ObjectFieldDescriptorAttribute
     {

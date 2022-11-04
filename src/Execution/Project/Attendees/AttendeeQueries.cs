@@ -1,14 +1,8 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
-using HotChocolate.Types;
-using HotChocolate.Types.Relay;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     [ExtendObjectType(OperationTypeNames.Query)]
     public class AttendeeQueries

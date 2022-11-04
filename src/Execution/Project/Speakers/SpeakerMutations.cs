@@ -1,11 +1,8 @@
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate;
-using HotChocolate.Types;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 
-namespace HotChocolate.ConferencePlanner.Speakers
+namespace HotChocolate.Execution.Benchmarks.Project.Speakers
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class SpeakerMutations

@@ -1,14 +1,8 @@
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
-using HotChocolate.Execution;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
 using HotChocolate.Subscriptions;
-using HotChocolate.Types;
-using HotChocolate.Types.Relay;
 
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     [ExtendObjectType(OperationTypeNames.Subscription)]
     public class AttendeeSubscriptions

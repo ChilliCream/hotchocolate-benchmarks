@@ -1,8 +1,6 @@
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate;
-using HotChocolate.Types.Relay;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Speakers
+namespace HotChocolate.Execution.Benchmarks.Project.Speakers
 {
     public record ModifySpeakerInput(
         [ID(nameof(Speaker))] 

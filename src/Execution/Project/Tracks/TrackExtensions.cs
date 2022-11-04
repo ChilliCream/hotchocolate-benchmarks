@@ -1,15 +1,9 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
-using HotChocolate.Types;
-using HotChocolate.Types.Relay;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotChocolate.ConferencePlanner.Tracks
+namespace HotChocolate.Execution.Benchmarks.Project.Tracks
 {
     [Node]
     [ExtendObjectType(typeof(Track))]

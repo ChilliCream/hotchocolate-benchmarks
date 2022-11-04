@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using HotChocolate.ConferencePlanner.Common;
-using HotChocolate.ConferencePlanner.Data;
+using HotChocolate.Execution.Benchmarks.Project.Common;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 
-namespace HotChocolate.ConferencePlanner.Tracks
+namespace HotChocolate.Execution.Benchmarks.Project.Tracks
 {
     public class TrackPayloadBase : Payload
     {

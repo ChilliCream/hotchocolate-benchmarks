@@ -1,4 +1,4 @@
-namespace HotChocolate.ConferencePlanner.Data
+namespace HotChocolate.Execution.Benchmarks.Project.Data
 {
     public class SessionAttendee
     {

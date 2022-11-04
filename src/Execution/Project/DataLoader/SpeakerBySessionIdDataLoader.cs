@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using GreenDonut;
-using HotChocolate.ConferencePlanner.Data;
+using HotChocolate.Execution.Benchmarks.Project.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotChocolate.ConferencePlanner.DataLoader
+namespace HotChocolate.Execution.Benchmarks.Project.DataLoader
 {
     public class SpeakerBySessionIdDataLoader : GroupedDataLoader<int, Speaker>
     {

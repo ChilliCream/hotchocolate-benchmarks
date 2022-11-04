@@ -1,4 +1,4 @@
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     public record RegisterAttendeeInput(
         string FirstName,

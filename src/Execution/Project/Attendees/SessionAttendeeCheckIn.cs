@@ -1,13 +1,9 @@
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
+using HotChocolate.Execution.Benchmarks.Project.Extensions;
 using Microsoft.EntityFrameworkCore;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
-using HotChocolate.Types.Relay;
 
-namespace HotChocolate.ConferencePlanner.Attendees
+namespace HotChocolate.Execution.Benchmarks.Project.Attendees
 {
     public class SessionAttendeeCheckIn
     {

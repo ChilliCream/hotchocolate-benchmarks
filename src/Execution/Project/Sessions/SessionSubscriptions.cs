@@ -1,11 +1,7 @@
-using System.Threading;
-using System.Threading.Tasks;
-using HotChocolate.ConferencePlanner.Data;
-using HotChocolate.ConferencePlanner.DataLoader;
-using HotChocolate;
-using HotChocolate.Types;
+using HotChocolate.Execution.Benchmarks.Project.Data;
+using HotChocolate.Execution.Benchmarks.Project.DataLoader;
 
-namespace HotChocolate.ConferencePlanner.Sessions
+namespace HotChocolate.Execution.Benchmarks.Project.Sessions
 {
     [ExtendObjectType(OperationTypeNames.Subscription)]
     public class SessionSubscriptions
