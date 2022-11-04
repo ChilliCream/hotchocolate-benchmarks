@@ -38,19 +38,19 @@ public class ParserBenchmarks
     public DocumentNode Introspection_Parse()
         => Utf8GraphQLParser.Parse(_introspectionBytes);
 
-    // [Benchmark]
+    [Benchmark]
     public DocumentNode KitchenSink_Query_Parse()
     => Utf8GraphQLParser.Parse(_kitchenSinkBytes);
 
-    // [Benchmark]
+    [Benchmark]
     public DocumentNode KitchenSink_Schema_Parse()
         => Utf8GraphQLParser.Parse(_kitchenSinkSchemaBytes);
 
-    // [Benchmark]
+    [Benchmark]
     public DocumentNode Medium_Schema()
         => Utf8GraphQLParser.Parse(_mediumSchemaBytes);
 
-    // [Benchmark]
+    [Benchmark]
     public DocumentNode Large_Schema()
         => Utf8GraphQLParser.Parse(_largeSchemaBytes);
 }
