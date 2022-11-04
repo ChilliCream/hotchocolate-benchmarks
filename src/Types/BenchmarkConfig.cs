@@ -2,7 +2,7 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Environments;
 using BenchmarkDotNet.Jobs;
 
-namespace HotChocolate.Language.Benchmarks;
+namespace HotChocolate.Types.Benchmarks;
 
 public class BenchmarkConfig : ManualConfig
 {
