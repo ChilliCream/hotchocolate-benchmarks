@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>HotChocolate.Execution.Benchmarks</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net7.0; net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <HC>12</HC>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'HC_12'">
+    <Bench>true</Bench>
+    <HC>12</HC>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'HC_13'">
+    <DefineConstants>$(DefineConstants);HC13</DefineConstants>
+    <Bench>true</Bench>
+    <HC>13</HC>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Bench)' == 'true'">
+    <DefineConstants>$(DefineConstants);RELEASE;TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotnet" Version="0.13.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(HC)' == '12'">
+    <PackageReference Include="HotChocolate.AspNetCore" Version="12.15.1" />
+    <PackageReference Include="HotChocolate" Version="12.15.1" />
+    <PackageReference Include="HotChocolate.Data" Version="12.15.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(HC)' == '13'">
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0-preview.76" />
+    <PackageReference Include="HotChocolate" Version="13.0.0-preview.76" />
+    <PackageReference Include="HotChocolate.Data" Version="13.0.0-preview.76" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="7.0.0-rc.2.22476.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-rc.2.22472.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0-rc.2.22472.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0-rc.2.22472.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

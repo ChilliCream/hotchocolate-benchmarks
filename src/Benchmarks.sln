@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Language", "Language\Langua
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types", "Types\Types.csproj", "{3D325F01-B603-41EF-8A0B-79E00EC04717}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execution", "Execution\Execution.csproj", "{E3BF25B9-6B12-4C9C-93EC-F5443ECDA9E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3D325F01-B603-41EF-8A0B-79E00EC04717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D325F01-B603-41EF-8A0B-79E00EC04717}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D325F01-B603-41EF-8A0B-79E00EC04717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3BF25B9-6B12-4C9C-93EC-F5443ECDA9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BF25B9-6B12-4C9C-93EC-F5443ECDA9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BF25B9-6B12-4C9C-93EC-F5443ECDA9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BF25B9-6B12-4C9C-93EC-F5443ECDA9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
