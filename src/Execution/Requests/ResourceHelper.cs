@@ -5,7 +5,7 @@ namespace HotChocolate.Execution.Benchmarks.Requests
 {
     public static class Resources
     {
-        private const string _resourcePath = "HotChocolate.Benchmarks.Requests";
+        private const string _resourcePath = "HotChocolate.Execution.Benchmarks.Requests";
         private static readonly Assembly _assembly = typeof(Resources).Assembly;
         private static string? _introspection;
         private static string? _sessionLargeQuery;

@@ -67,6 +67,8 @@
   <ItemGroup>
     <None Remove="Requests\*.graphql" />
     <EmbeddedResource Include="Requests\*.graphql" />
+    <None Remove="Project\Imports\Data.json" />
+    <EmbeddedResource Include="Project\Imports\Data.json" />
   </ItemGroup>
 
 </Project>

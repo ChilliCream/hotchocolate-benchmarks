@@ -9,7 +9,7 @@ namespace HotChocolate.Execution.Benchmarks.Project.Imports
         public async Task LoadDataAsync(ApplicationDbContext db)
         {
             using var stream = GetType().Assembly.GetManifestResourceStream(
-                "HotChocolate.ConferencePlanner.Imports.Data.json")!;
+                "HotChocolate.Execution.Benchmarks.Project.Imports.Data.json")!;
             using var reader = new JsonTextReader(new StreamReader(stream));
 
             var speakerNames = new Dictionary<string, Speaker>();
